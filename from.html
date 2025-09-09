@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamal er Phitha Ghor</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            margin-top: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jamal er Phitha Ghor</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Please fill up the form</h2>
+            <form>
+                <!-- Name -->
+                <label for="name">Your Name:
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </label>
+
+                <!-- Email -->
+                <label for="email">Your Email:
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </label>
+
+                <!-- Phone -->
+                <label for="phone">Your Phone:
+                    <input id="phone" type="tel" placeholder="Enter your phone number">
+                </label>
+
+                <!-- Radio options -->
+                <fieldset>
+                    <legend>Pick one Phitha</legend>
+
+                    <label for="chitoy">
+                        <input type="radio" name="phitha" id="chitoy" value="chitoy">
+                        Chitoy
+                    </label>
+
+                    <label for="vapa">
+                        <input type="radio" name="phitha" id="vapa" value="vapa">
+                        Vapa
+                    </label>
+
+                    <label for="puri">
+                        <input type="radio" name="phitha" id="puri" value="puri">
+                      puri
+                    </label>
+                </fieldset>
+
+                <!-- Submit -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2025 Jamal er Phitha Ghor. All rights reserved.</small></p>
+    </footer>
+</body>
+</html>
