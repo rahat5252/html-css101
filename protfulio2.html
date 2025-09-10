@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+    body{line-height:1.6;background:#fdfdfd;color:#333;}
+
+    /* Navbar */
+    nav{
+      background:#fff;
+      padding:15px;
+      position:sticky;
+      top:0;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      z-index:1000;
+    }
+    nav ul{display:flex;justify-content:center;list-style:none;gap:25px;}
+    nav ul li a{color:#333;text-decoration:none;font-weight:bold;}
+    nav ul li a:hover{color:#4caf50;}
+
+    /* Section Base */
+    section{padding:60px 20px;min-height:100vh;}
+
+    /* Home */
+    #home{
+      background:#e8f5e9;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+    #home h1{font-size:3rem;margin-bottom:10px;color:#2e7d32;}
+    #home p{font-size:1.2rem;color:#555;}
+
+    /* About */
+    #about{display:flex;flex-wrap:wrap;gap:20px;align-items:center;}
+    .col-50{flex:1 1 50%;min-width:300px;}
+    .col-50 img{max-width:100%;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+
+    /* My Information */
+    #info{display:flex;flex-wrap:wrap;gap:30px;}
+    .skills h3, .education h3{margin-bottom:15px;color:#2e7d32;}
+    .skill-item{margin-bottom:15px;}
+    .skill-name{margin-bottom:5px;font-weight:bold;}
+    .skill-bar{
+      width:100%;background:#ddd;border-radius:20px;overflow:hidden;
+    }
+    .skill-bar div{
+      height:12px;background:#4caf50;
+    }
+
+    /* Contact */
+    #contact{display:flex;flex-wrap:wrap;gap:20px;}
+    form{display:flex;flex-direction:column;gap:15px;}
+    input,textarea{padding:10px;border:1px solid #ccc;border-radius:6px;}
+    button{padding:12px;background:#4caf50;color:#fff;border:none;border-radius:6px;cursor:pointer;}
+    button:hover{background:#388e3c;}
+
+    /* Footer */
+    footer{background:#f0f0f0;color:#333;text-align:center;padding:15px;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#info">My Information</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I am Rahat. A passionate Web Developer & Designer.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="col-50">
+      <img src="https://via.placeholder.com/450x350" alt="About Me">
+    </div>
+    <div class="col-50">
+      <h2>About Me</h2>
+      <p>
+        I am a web developer with skills in HTML, CSS, and JavaScript.  
+        I love creating responsive and modern websites.  
+        My focus is on clean design and user experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- My Information -->
+  <section id="info">
+    <!-- Skills -->
+    <div class="col-50 skills">
+      <h3>My Skills</h3>
+      <div class="skill-item">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar"><div style="width:95%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar"><div style="width:85%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar"><div style="width:70%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name">Bootstrap</div>
+        <div class="skill-bar"><div style="width:60%"></div></div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="col-50 education">
+      <h3>Education Qualification</h3>
+      <p><strong>SSC</strong> - GPA 5.00 (2018, Dhaka Board)</p>
+      <p><strong>HSC</strong> - GPA 4.90 (2020, Dhaka Board)</p>
+      <p><strong>Bachelor</strong> - Running (2025)</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="col-50">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Mobile Number" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="col-50">
+      <h2>Contact Info</h2>
+      <p><strong>Mobile:</strong> +880123456789</p>
+      <p><strong>Email:</strong> rahat@example.com</p>
+      <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Rahat. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
